@@ -61,7 +61,8 @@ public class MyXfloat extends Xfloat {
     //based on the man and sign of the two numbers
     if (x_man>y_man){
       if (debug) System.out.println("Case 1");
-        int exp_diff=this.exp-y.exp; //find the difference of the exp's so we can shift things over
+
+      int exp_diff=this.exp-y.exp; //find the difference of the exp's so we can shift things over
       new_sign=this.sign;
 
       if (y.sign==new_sign){
@@ -74,6 +75,7 @@ public class MyXfloat extends Xfloat {
     }
     else if (x_man<y_man){
       if (debug) System.out.println("Case 2");
+
       new_sign=y.sign;
 
       if (this.sign==new_sign){
@@ -86,6 +88,7 @@ public class MyXfloat extends Xfloat {
     }
     else{
       if (debug) System.out.println("Case 3");
+
       new_sign=y.sign;
 
       if (this.sign==new_sign){
